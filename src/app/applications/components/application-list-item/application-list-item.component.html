@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-1">
+    <input type="checkbox" id="{{ application.id }}" [checked]="isFavorite" (change)="onCheckboxChange($event)" />
+  </div>
+  <!-- <div class="col-sm-auto">{{ application.id }}</div> -->
+  <div class="col-2"><a [routerLink]="'/application/' + application.id">{{ application.name }}</a></div>
+  <div class="col-2">{{ application.position }}</div>
+  <div class="col-2">{{ application.applied | date: "shortDate" }}</div>
+  <div class="col-2">{{ application.experience }}</div>
+  <div class="col-3">
+    <span>{{ application.availability["M"] }}, </span>
+    <span>{{ application.availability["T"] }}, </span>
+    <span>{{ application.availability["W"] }}, </span>
+    <span>{{ application.availability["Th"] }}, </span>
+    <span>{{ application.availability["F"] }}, </span>
+    <span>{{ application.availability["S"] }}, </span>
+    <span>{{ application.availability["Su"] }}</span>
+  </div>
+</div>

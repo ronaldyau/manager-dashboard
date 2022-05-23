@@ -1,0 +1,19 @@
+<mat-form-field appearance="fill">
+  <mat-label>{{ label }}</mat-label>
+  <mat-select *ngIf="isMultiple" multiple (selectionChange)="onSelectionChanged($event)">
+    <mat-option
+      *ngFor="let option of options | keyvalue"
+      [value]="option.key"
+    >
+      {{ option.key }} {{ option.value }}
+    </mat-option>
+  </mat-select>
+  <mat-select *ngIf="!isMultiple" (selectionChange)="onSelectionChanged($event)">
+    <mat-option
+      *ngFor="let option of options | keyvalue"
+      [value]="option.key"
+    >
+      {{ option.key }} {{ option.value }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

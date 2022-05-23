@@ -1,0 +1,21 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-1">Favorite</div>
+    <div class="col-2" (click)="onNameClick()">Name</div>
+    <div class="col-2" (click)="onPositionClick()">Position</div>
+    <div class="col-2" (click)="onAppliedClick()">Applied</div>
+    <div class="col-2" (click)="onExperienceClick()">Experience</div>
+    <div class="col-3" (click)="onAvailabilityClick()">Availability</div>
+  </div>
+  <div
+    *ngFor="let application of applicationsToDisplay; index as i"
+    let
+    appclass="row"
+  >
+    <app-application-list-item
+      [application]="application"
+      (favoriteClick)="handleFavoriteClick($event)"
+    ></app-application-list-item>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="container card-container" *ngIf="application">
+  <mat-card class="card">
+    <mat-card-title>{{ application.name}}</mat-card-title>
+    <mat-card-subtitle>{{ application.position }}</mat-card-subtitle>
+    <mat-card-content>
+        <h2>Applied: {{ application.applied }}</h2>
+        <h2>Years Experience: {{ application.experience }}</h2>
+        <h2>Availability:</h2>
+        <div class="row">
+            <div class="col-3">Monday</div>
+            <div class="col-1">{{ application.availability.M }} </div>
+        </div>
+        <div class="row">
+            <div class="col-3">Tuesday</div>
+            <div class="col-1">{{ application.availability.T }} </div>
+        </div>
+        <div class="row">
+            <div class="col-3">Wednesday</div>
+            <div class="col-1">{{ application.availability.W }} </div>
+        </div>
+        <div class="row">
+            <div class="col-3">Thursday</div>
+            <div class="col-1">{{ application.availability.Th }} </div>
+        </div>
+        <div class="row">
+            <div class="col-3">Friday</div>
+            <div class="col-1">{{ application.availability.F }} </div>
+        </div>
+        <div class="row">
+            <div class="col-3">Saturday</div>
+            <div class="col-1">{{ application.availability.S }} </div>
+        </div>
+        <div class="row">
+            <div class="col-3">Sunday</div>
+            <div class="col-1">{{ application.availability.Su }} </div>
+        </div>
+        <h2>Questions: </h2>
+        <div *ngFor="let question of application.questions">
+            <p>{{ question.text }} {{ question.answer }}</p>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>BOOKMARK</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
