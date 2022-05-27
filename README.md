@@ -4,6 +4,12 @@ Dashboard prototype for managers to be able to browse, sort, and filter job appl
 
 Managers can also inspect an individual application to see more details, as well as flag applications to look at later or revisit.
 
+## Installation
+
+`npm install -g json-server`
+
+`npm install`
+
 ## Mock API server
 
 Run `json-server src/assets/data/generate.js`. This will run an in-memory database with randomly generated applications
