@@ -1,9 +1,11 @@
 .card-container {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
 .card {
   min-width: 400px;
   width: auto;
+}
+.sentence:first-letter {
+  text-transform: capitalize;
 }

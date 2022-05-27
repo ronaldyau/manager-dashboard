@@ -1,10 +1,9 @@
 <div class="container">
   <div class="row">
-    <div class="col-2" (click)="onNameClick()">Name</div>
+    <div class="col-4" (click)="onNameClick()">Name</div>
     <div class="col-2" (click)="onPositionClick()">Position</div>
     <div class="col-2" (click)="onAppliedClick()">Applied</div>
     <div class="col-2" (click)="onExperienceClick()">Experience</div>
-    <div class="col-3" (click)="onAvailabilityClick()">Availability</div>
   </div>
   <div
     *ngFor="let application of applicationsToDisplay; index as i"
