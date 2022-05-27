@@ -10,13 +10,13 @@ import { IApplication } from './applications/interfaces/application';
 })
 export class AppComponent {
   title: string = 'Manager Dashboard';
-  applications: IApplication[] = [];
+  // applications: IApplication[] = [];
 
   constructor(private service: ApplicationsService) {}
 
   ngOnInit() {
-    this.service.getApplications().pipe(take(1)).subscribe((applications:IApplication[]) => {
-      this.applications = applications;
-    })
+    // this.service.getApplications().pipe(take(1)).subscribe((applications:IApplication[]) => {
+    //   this.applications = applications;
+    // })
   }
 }

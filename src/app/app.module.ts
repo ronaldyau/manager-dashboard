@@ -11,9 +11,11 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { OptionsFilterComponent } from './applications/components/options-filter/options-filter.component';
 import { ApplicationDashboardComponent } from './applications/components/application-dashboard/application-dashboard.component';
+import { ApplicationsPageComponent } from './applications/components/applications-page/applications-page.component';
+import { BookmarksPageComponent } from './applications/components/bookmarks-page/bookmarks-page.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ApplicationDashboardComponent } from './applications/components/applica
     ApplicationDetailsComponent,
     OptionsFilterComponent,
     ApplicationDashboardComponent,
+    ApplicationsPageComponent,
+    BookmarksPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +37,7 @@ import { ApplicationDashboardComponent } from './applications/components/applica
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    MatTabsModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

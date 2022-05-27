@@ -296,20 +296,24 @@
 </style>
 
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<!-- <div class="toolbar" role="banner">
   <h1>Application Dashboard</h1>
   <div class="spacer"></div>
-</div>
+</div> -->
+
+<mat-toolbar>
+  <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button> -->
+  <span [routerLink]="''" role="button">Job Applications</span>
+  <span class="spacer"></span>
+  <button mat-icon-button [routerLink]="'bookmarks'">
+    <mat-icon>bookmark</mat-icon>
+  </button>
+</mat-toolbar>
 
 <div class="content" role="main">
-  <mat-tab-group>
-    <mat-tab label="Applications">
-      <app-application-dashboard
-        [applications]="applications"
-      ></app-application-dashboard>
-    </mat-tab>
-    <mat-tab label="Bookmarked"> Content 2 </mat-tab>
-  </mat-tab-group>
+  <router-outlet></router-outlet>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
@@ -319,5 +323,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<router-outlet></router-outlet>

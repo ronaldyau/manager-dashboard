@@ -1,8 +1,9 @@
 .card-container {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
 .card {
   min-width: 400px;
+  width: auto;
 }
