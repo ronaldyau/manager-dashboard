@@ -39,35 +39,24 @@ export class ApplicationDashboardComponent implements OnInit {
     this.getFilters();
   }
 
-  // TODO: Filter
   onPositionsFilterChanged(event: any) {
     this.filteredPositions = event.value;
-    // TODO: run that filters for everything
     this.applyFilters();
-    this.applySort();
   }
 
   onAppliedFilterChanged(event: any) {
     this.filteredAppliedDate = event.value;
     this.applyFilters();
-    this.applySort();
   }
 
   onExperienceFilterChanged(event: any) {
     this.filteredExperience = event.value;
     this.applyFilters();
-    this.applySort();
   }
 
   onAvailabilityFilterChanged(event: any) {
     this.filteredAvailability = event.value;
     this.applyFilters();
-    this.applySort();
-  }
-
-  // TODO
-  handleFavoriteClick(event: any) {
-    console.log(event);
   }
 
   private getFilters() {
@@ -290,6 +279,4 @@ export class ApplicationDashboardComponent implements OnInit {
       );
     }
   }
-
-  private applySort() {}
 }
