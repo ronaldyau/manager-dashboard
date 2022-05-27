@@ -8,7 +8,10 @@ import { ApplicationDetailsComponent } from './applications/components/applicati
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTabsModule } from '@angular/material/tabs';
 import { OptionsFilterComponent } from './applications/components/options-filter/options-filter.component';
 import { ApplicationDashboardComponent } from './applications/components/application-dashboard/application-dashboard.component';
 
@@ -19,7 +22,7 @@ import { ApplicationDashboardComponent } from './applications/components/applica
     ApplicationListItemComponent,
     ApplicationDetailsComponent,
     OptionsFilterComponent,
-    ApplicationDashboardComponent
+    ApplicationDashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,10 @@ import { ApplicationDashboardComponent } from './applications/components/applica
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSelectModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

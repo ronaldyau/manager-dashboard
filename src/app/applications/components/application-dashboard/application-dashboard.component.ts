@@ -26,14 +26,6 @@ export class ApplicationDashboardComponent implements OnInit {
     | '5 years'
     | '10 years';
   private filteredAvailability: string[];
-  private sortOrder:
-    | 'none'
-    | 'name'
-    | 'position'
-    | 'applied'
-    | 'experience'
-    | 'availability';
-  private sortBy: 'ascending' | 'descending';
   private oneDay = 24 * 60 * 60 * 1000;
 
   constructor() {}

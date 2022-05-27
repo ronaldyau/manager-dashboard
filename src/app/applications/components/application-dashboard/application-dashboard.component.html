@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-2">
+    <div class="col-6 col-sm-3">
       <app-options-filter
         [label]="'Positions'"
         [options]="positions"
@@ -8,21 +8,21 @@
         (onOptionsChanged)="onPositionsFilterChanged($event)"
       ></app-options-filter>
     </div>
-    <div class="col-2">
+    <div class="col-6 col-sm-3">
       <app-options-filter
         [label]="'Date Applied'"
         [options]="dateRange"
         (onOptionsChanged)="onAppliedFilterChanged($event)"
       ></app-options-filter>
     </div>
-    <div class="col-2">
+    <div class="col-6 col-sm-3">
       <app-options-filter
         [label]="'Experience'"
         [options]="experienceRange"
         (onOptionsChanged)="onExperienceFilterChanged($event)"
       ></app-options-filter>
     </div>
-    <div class="col-2">
+    <div class="col-6 col-sm-3">
       <app-options-filter
         [label]="'Availability'"
         [options]="availabilities"

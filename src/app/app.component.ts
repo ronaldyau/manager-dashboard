@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ApplicationsService } from './applications/services/applications.service';
 import { take } from 'rxjs/operators';
 import { IApplication } from './applications/interfaces/application';
